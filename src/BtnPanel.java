@@ -11,18 +11,18 @@ public class BtnPanel extends JPanel {
 
     public  BtnPanel(){
         this.setPreferredSize(new Dimension(400, 80));
-        this.setBackground(new Color(194, 6, 162));
+        this.setBackground(new Color(129, 202, 207));
 
         addtask = new JButton("add task");
-        addtask.setBorder(emptyborder); // удаление границ текстур кнопок
-        addtask.setFont(new Font("Sans-serif", Font.PLAIN, 20)); // шрифт кнопок
+        addtask.setBorder(emptyborder);
+        addtask.setFont(new Font("Sans-serif", Font.PLAIN, 14));
         this.add(addtask);
 
         this.add(Box.createHorizontalStrut(20));
 
         clear = new JButton("clear all task");
-        clear.setBorder(emptyborder); // удаление границ текстур кнопок
-        addtask.setFont(new Font("Sans-serif", Font.PLAIN, 20)); // шрифт кнопок
+        clear.setBorder(emptyborder);
+        addtask.setFont(new Font("Sans-serif", Font.PLAIN, 14));
 
         this.add(clear);
     }

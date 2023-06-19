@@ -7,6 +7,7 @@ public class Task extends JPanel {
     private JButton done;
     private JButton remove;
 
+
     public Task(){
         GridLayout Layouttask = new GridLayout(1, 4);
         Layouttask.setHgap(5);
@@ -20,27 +21,27 @@ public class Task extends JPanel {
         index.setBackground(new Color(255, 234, 17));
         this.add(this.index);
 
-        taskname = new JTextField("Новая задача");
+        taskname = new JTextField("kapibara");
         taskname.setPreferredSize(new Dimension(10, 20));
         taskname.setBorder(BorderFactory.createEmptyBorder());
         taskname.setBackground(new Color(255, 234, 17));
         this.add(this.taskname);
 
-        done = new JButton("Готово");
+        done = new JButton("done");
         done.setPreferredSize(new Dimension(10, 20));
         this.add(this.done);
 
-        remove = new JButton("Удалить");
+        remove = new JButton("remove");
         remove.setPreferredSize(new Dimension(10, 20));
         this.add(this.remove);
 
-
     }
 
-    public void writeindexjl(int n) { // отправляет индекс таска в метод indexnum
+    public void writeindexjl(int n) {
         this.index.setText(String.valueOf(n));
         this.revalidate();
     }
+    public JTextField gettextfieldj(){ return this.taskname; }
     public JButton getdonej(){
         return this.done;
     }
