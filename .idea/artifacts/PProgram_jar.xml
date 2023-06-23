@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PProgram:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PProgram_jar</output-path>
+    <root id="archive" name="PProgram.jar">
+      <element id="module-output" name="PProgram" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/java-json.jar.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/json-20140107.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
